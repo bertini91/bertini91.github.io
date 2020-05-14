@@ -21,3 +21,9 @@ a, a:hover{
     right: 0px;
     position: absolute;
 }
+
+@media(min-width:1000px){
+    #navbarSupportedContent{
+        position: relative;
+    }
+}
