@@ -1,3 +1,23 @@
+.navbar{
+    background-color: #bfc3c4;
+}
 .fondo{
-    background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );
+    /* background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% ); */
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(56,56,244,1) 0%, rgba(35,191,223,0.7987394787016369) 100%); */
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(37,92,186,1) 0%, rgba(103,153,190,0.7987394787016369) 100%);
+}
+h3, #name{
+    font-family: 'Righteous', cursive;
+}
+h2{
+    font-family: 'Bree Serif', serif;
+}
+a, a:hover{
+    color: white;
+}
+
+#navbarSupportedContent{
+    width: 100%;
+    right: 0px;
+    position: absolute;
 }
