@@ -15,15 +15,18 @@ h2{
 h5, footer p{
 	font-family: 'Pangolin', cursive;
 }
-a, a:hover{
-    color: white;
-}
+
 
 .row .col-md-3, .card .pt-4{
 	background-color: #6c98c6;
 }
 #basicInfo h3, p a{
 	color: #6c98c6;
+}
+a:hover{
+	background-color: #6c98c6;
+	color: white;
+	text-decoration: none;
 }
 
 #navbarSupportedContent{
