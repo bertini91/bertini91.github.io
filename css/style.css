@@ -28,6 +28,9 @@ a:hover{
 	color: white;
 	text-decoration: none;
 }
+footer a{
+	color: white;
+}
 
 #navbarSupportedContent{
     width: 100%;
