@@ -19,6 +19,13 @@ a, a:hover{
     color: white;
 }
 
+.row .col-md-3, .card .pt-4{
+	background-color: #6c98c6;
+}
+#basicInfo h3, p a{
+	color: #6c98c6;
+}
+
 #navbarSupportedContent{
     width: 100%;
     right: 0px;
