@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -41,7 +42,7 @@
                             <a class="nav-link" href="#briefcase">Portafolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#aboutMe">Contacto</a>
+                            <a class="nav-link" href="#basicInfo">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -52,7 +53,7 @@
         <div class="container">
             <img src="./img/perfil.png" alt="" srcset="">
             <h3 class="mt-3">Nicolás Bertini</h3>
-            <p class="lead">Estudiante de igenieria en sistemas</p>
+            <p class="lead"><strong>Estudiante de Igeniería en Sistemas de Información</strong></p>
     
         </div>
     </section>
@@ -142,8 +143,8 @@
         </article>
         <article id="education">
             <h2 class="display-4 text-center my-4">Educación</h2>
-            <div class="row d-flex justify-content-center align-item-center">
-                <div class="card m-4 shadow bg-white rounded" style="width: 20rem;">
+            <div class="education-row d-flex justify-content-center align-item-center">
+                <div class="card m-4 shadow bg-white rounded" style="width: 320px;">
                     <div class="pt-4 pb-4 bg-primary text-light text-center d-flex flex-column justify-content-center align-item-center">
                         <p class="lead">Agosto - Diciembre 2010</p>
                         <p class="lead">IFET</p>
@@ -178,7 +179,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row d-flex justify-content-center align-item-center">
+            <div class="education-row d-flex justify-content-center align-item-center">
                 <div class="card m-4 shadow bg-white rounded" style="width: 20rem;">
                     <div class="pt-4 pb-4 bg-primary text-light text-center d-flex flex-column justify-content-center align-item-center">
                         <p class="lead">Agosto - Diciembre 2018</p>
@@ -216,7 +217,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row d-flex justify-content-center align-item-center">
+            <div class="education-row d-flex justify-content-center align-item-center">
                 <div class="card m-4 shadow bg-white rounded" style="width: 20rem;">
                     <div class="pt-4 pb-4 bg-primary text-light text-center d-flex flex-column justify-content-center align-item-center">
                         <p class="lead">Agosto - Diciembre 2017</p>
@@ -252,6 +253,8 @@
                         <p class="mb-1"><strong>Estado: </strong> Terminado</p>
                     </div>
                 </div>
+            </div>
+            <div class="education-row d-flex justify-content-center align-item-center">
                 <div class="card m-4 shadow bg-white rounded" style="width: 20rem;">
                     <div class="pt-4 pb-4 bg-primary text-light text-center d-flex flex-column justify-content-center align-item-center">
                         <p class="lead">Marzo - Julio 2019</p>
@@ -264,6 +267,19 @@
                         <p class="mb-1"><strong>Estado: </strong> Terminado</p>
                     </div>
                 </div>
+                <div class="card m-4 shadow bg-white rounded" style="width: 20rem;">
+                    <div class="pt-4 pb-4 bg-primary text-light text-center d-flex flex-column justify-content-center align-item-center">
+                        <p class="lead">Abril 2020</p>
+                        <p class="lead">RollingCode</p>
+                    </div>
+                    <div class="card-body">
+                        <h5><strong>Full-stack</strong></h5>
+                        
+                        <p class="card-text">Curso de programacion full-stack en la academia de RollingCode</p>
+                        <p class="mb-1"><strong>Estado: </strong> Cursando</p>
+                    </div>
+                </div>
+                
             </div>
         </article>
         <article id="skills">
@@ -337,6 +353,202 @@
         </article>
         <article id="briefcase">
             <h2 class="display-4 text-center my-4">Portafolio</h2>
+
+            <!-- CARDS -->
+            <div class="card-group d-block">
+                <div class="row d-flex justify-content-center align-item-center">
+
+                    <div id="proyJL" class="card m-4 shadow bg-white rounded" style="width: 323px;">
+                        <a href="#openModalJL">
+                            <img src="./img/JL-Principal.png" class="card-img-top" alt="Captura Sistema JL">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">JL Solarium</h5>
+                            <p class="card-text">El proyecto se desarrolló en la empresa JL Solárium &amp;
+                                Peluquería de María Juliana López, quien puso a disposición la información necesaria 
+                                <strong><a href="#openModalJL" class="text-primary">Ver más..</a></strong>
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="card m-4 shadow bg-white rounded" style="width: 323px;">
+                        <a href="#openModalBT">
+                            <img src="./img/BoaTerra-Principal.png" class="card-img-top" alt="Captura Sistema BoaTerra">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Boa Terra</h5>
+                            <p class="card-text">Este proyecto fue desarrollado para el local comercial BOA TERRA, el cual se encarga
+                                de la venta de frutas, verduras, forrajeria, entre otras cosas. 
+                                <strong><a href="#openModalBT" class="text-primary">Ver más..</a></strong>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card m-4 shadow bg-white rounded" style="width: 323px;">
+                        <a href="#openModalMK">
+                            <img src="./img/ControlStock-ModificarProd.png" class="card-img-top" alt="Captura Sistema de Maxi Kiosco">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Maxi Kiosco</h5>
+                            <p class="card-text">Este proyecto esta desarrollado con el objetivo de cumplir con la administracion, 
+                                control de stock y caja de un almacen. 
+                                <strong><a href="#openModalMK" class="text-primary">Ver más..</a></strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center align-item-center">
+
+                    <div class="card m-4 shadow bg-white rounded" style="width: 323px;">
+                        <a href="#openModalCD">
+                            <img src="./img/CosasDulces-Principal.jpg" class="card-img-top" alt="Captura de Pagina web de Panaderia">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Cosas Dulces</h5>
+                            <p class="card-text">Este proyecto fue desarrollado como una pagina web de una panaderia, 
+                                la cual cuenta con un agradable diseño gráfico  
+                                <strong><a href="#openModalCD" class="text-primary">Ver más..</a></strong>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card m-4 shadow bg-white rounded" style="width: 323px;">
+                        <a href="#openModalCA">
+                            <img src="./img/CocinArte-BlogPost.png" class="card-img-top" alt="Captura de Pagina web de Blog de Comida">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Cocin Arte</h5>
+                            <p class="card-text">
+                                Este proyecto fue desarrollado con un formato pagina web sobre un blog de comida, el cual tiene 
+                                nombre como "Cocin Arte". 
+                                <strong><a href="#openModalCD" class="text-primary">Ver más..</a></strong>
+                            </p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                
+                
+
+            </div>
+
+            <!-- FIN CARDS -->
+
+
+                                    <!-- Ventana Emergente -->
+            
+            <!-- Ventana Emergente SistemaJL -->
+            <div id="openModalJL" class="modalDialog">
+                <div>
+                    <a href="javascript:history.back()" title="Close" class="close">X</a>
+                    <div  class="text-center sec_img">
+
+                        <img src="./img/JL-Principal.png" class="proy-img" alt="Captura del SistemaJL">
+                    </div>
+                    <h5><strong>JL Solarium</strong></h5>
+                    <p class="card-text">
+                        <small>
+                            La presente práctica profesional supervisada se desarrolló en la empresa JL Solárium &amp;
+                            Peluquería de María Juliana López, quien puso a disposición la información necesaria y
+                            el personal de trabajo para llevar a cabo entrevistas, tanto para adquirir los requisitos
+                            que necesitaban, como para ir validando el sistema a medida que lo iba desarrollando.
+                            El marco de realización de dicho proyecto está dentro del “Sistema de Administración”
+                            para el otorgamiento de turnos a diferentes camas solares, ventas de pack de sesiones,
+                            un registro de las operaciones concertadas con éxitos, facturación y un control de caja
+                            para el personal de turno. <strong> Esta desarrollando en el lenguaje de programación C#</strong>.
+                        </small>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ventana Emergente SistemaBT -->
+            <div id="openModalBT" class="modalDialog">
+                <div>
+                    <a href="javascript:history.back()" title="Close" class="close">X</a>
+                    <div  class="text-center sec_img modal-sec_imgBT">
+
+                        <img id="modalBT-img" src="./img/BoaTerra-Principal.png" class="proy-img" alt="Captura del SistemaJL">
+                    </div>
+                    <h5><strong>Boa Terra</strong></h5>
+                    <p class="card-text">
+                        <small>
+                            Este proyecto fue desarrollado para el local comercial BOA TERRA, el cual se encarga
+                            de la venta de frutas, verduras, forrajeria, entre otras cosas. El propietario necesitaba un sistema
+                            de Administración de stock, caja, facturación y todo requisito para el buen funcionamiento del local.
+                            El proyecto en la parte Front-End se encuentra finalizado en su totalidad, pero quedan detalles del
+                            lado del Back-End que se deben corregir. <strong> Esta desarrollando en lenguaje HTML, CSS y JavaScript</strong>.
+                        </small>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ventana Emergente MaxiKiosco -->
+            <div id="openModalMK" class="modalDialog">
+                <div>
+                    <a href="javascript:history.back()" title="Close" class="close">X</a>
+                    <div  class="text-center sec_img modal-sec_imgMK">
+
+                        <img id="modalMK-img" src="./img/ControlStock-ModificarProd.png" class="proy-img" alt="Captura del Sistema MaxiKiosco">
+                    </div>
+                    <h5><strong>MaxiKiosco</strong></h5>
+                    <p class="card-text">
+                        <small>
+                            Este proyecto esta desarrollado con el objetivo de cumplir con la administracion, 
+                            control de stock y caja de un almacen. Fue desarrollado durante el cursado de la carrera de Ingenieria
+                            para sastifacer con los requerimientos planteados por materia. Es uno de tantos proyectos 
+                            desarrollado durante el cursado, el cual cuenta con el 100% desarrollo.
+                            <strong> Esta desarrollando en el lenguaje de programación JAVA</strong>.
+                        </small>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ventana Emergente Panaderia -->
+            <div id="openModalCD" class="modalDialog">
+                <div>
+                    <a href="javascript:history.back()" title="Close" class="close">X</a>
+                    <div  class="text-center sec_img modal-sec_imgCD">
+
+                        <img id="modalCD-img" src="./img/CosasDulces-Principal.jpg" alt="Captura de pagina web Cosas Dulces">
+                    </div>
+                    <h5><strong>Cosas Dulces</strong></h5>
+                    <p class="card-text">
+                        <small>
+                            Este proyecto fue desarrollado como una pagina web de una panaderia, 
+                            la cual cuenta con un agradable diseño gráfico y facil de utilizar para motivar al 
+                            cliente a acceder y consultar cualquier duda que se le presente. Fue desarrollado durante 
+                            el cursado de full-stack en la academia RollingCode. 
+                            <strong>Para su desarrollo se utilicé HTML, CSS y BOOTSTRAP.</strong> 
+                        </small>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Ventana Emergente Blog de comida -->
+            <div id="openModalCA" class="modalDialog">
+                <div>
+                    <a href="javascript:history.back()" title="Close" class="close">X</a>
+                    <div  class="text-center sec_img modal-sec_imgCA">
+
+                        <img id="modalCA-img" src="./img/CocinArte-BlogPost.png" alt="Captura de pagina web Blog de Comida">
+                    </div>
+                    <h5><strong>Blog de cocina "Cocin Arte"</strong></h5>
+                    <p class="card-text">
+                        <small>
+                            Este proyecto fue desarrollado con un formato pagina web sobre un blog de comida, el cual tiene 
+                            nombre como "Cocin Arte". Cuenta con un agradable diseño gráfico y facil de utilizar para motivar al 
+                            cliente a acceder y consultar cualquier duda que se le presente referido a algun menu en particular. 
+                            Fue desarrollado durante el cursado de full-stack en la academia RollingCode junto a otros 3 compañeros.
+                            Al codigo se lo puede encontrar <a href="https://github.com/bertini91/BlogFood " target="_blank">aquí.</a>
+                            <strong>Para su desarrollo se utilizamos HTML, CSS y BOOTSTRAP.</strong>
+                        </small>
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Fin ventanas Emergentes -->
+
         </article>
     </section>
     <footer class="bg-dark text-light py-4">
@@ -348,7 +560,7 @@
             <a href="https://github.com/bertini91/" target="_blank">
                 <i class="fab fa-github fa-2x"></i>
             </a>
-            <p class="load mt-3">Nicolás Bertini</p>
+            <p id="footerName" class="load mt-3"><strong>Nicolás Bertini</strong></p>
             <p>&copy; Todos los derechos reservados</p>
         </div>
 
