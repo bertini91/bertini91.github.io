@@ -132,35 +132,14 @@ footer a{
 } */
 
 #modalCD-img{
-	width: 50%;
+	width: 50% !important;
 }
 #modalCA-img{
-	width: 60%;
+	width: 55% !important;
 }
 
 
 @media(max-width:1024px){
-	/* .modalDialog div{
-		width: auto !important;
-		height: auto !important;
-	}
-	.proy-img{
-		width: 260px !important;
-	} */
-	/* .modalDialog{
-		display: flex !important;
-		width: 95%;
-		height: 95%;
-	}
-	.proy-img{
-		height: 30% !important;
-	}
-	.modalDialog div{
-		position: relative;
-		display: flex;
-		flex-wrap: wrap;
-		flex-shrink: inherit;
-	} */
 	#navbarSupportedContent{
         position: relative;
 	}
@@ -181,7 +160,7 @@ footer a{
 		width: 70% !important;
 	}
 	#modalCA-img{
-		width: 75% !important;
+		width: 70% !important;
 	}
 	
 }
