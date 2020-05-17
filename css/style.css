@@ -143,11 +143,6 @@ footer a:hover{
 
 									/* Efectos */
 
-/* #name{
-	transition-delay: 2s;
-	transition-duration: 6s !important;
-	transform: rotateY(360deg) !important;
-} */
 #name {
 	animation-duration: 3s;
 	animation-name: slidein;
@@ -209,10 +204,3 @@ footer a:hover{
 		width: 70% !important;
 	}	
 }
-
-/* @keyframes loadName{
-	to{
-		transition-duration: 4s;
-		transform: rotateY(360deg);
-	}
-} */
