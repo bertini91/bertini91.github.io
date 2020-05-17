@@ -2,8 +2,6 @@
     background-color: #bfc3c4;
 }
 .fondo{
-    /* background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% ); */
-    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(56,56,244,1) 0%, rgba(35,191,223,0.7987394787016369) 100%); */
     background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(37,92,186,1) 0%, rgba(103,153,190,0.7987394787016369) 100%);
 }
 h3, #name{
@@ -23,13 +21,25 @@ h5, footer p{
 #basicInfo h3, p a{
 	color: #6c98c6;
 }
+li a:hover{
+	background-color: transparent !important;
+	border: #6c98c6 2px ridge;
+	border-top-left-radius: 10px;
+  	border-bottom-right-radius: 10px;
+}
 a:hover{
 	background-color: #6c98c6;
 	color: white;
 	text-decoration: none;
 }
+#name:hover{
+	background-color: transparent;
+}
 footer a{
 	color: white;
+}
+footer a:hover{
+	background-color: transparent;
 }
 
 #navbarSupportedContent{
@@ -43,7 +53,7 @@ footer a{
 	height: 260px;
 }
 
-/* VENTANA */
+		/* VENTANA EMERGENTE */
 .modalDialog {
 	padding: 8px;
 	display: flex;
@@ -100,13 +110,9 @@ footer a{
 }
 .close:hover { background: #00d9ff; }
 
-/* FIN VENTANA */
+		/* FIN VENTANA */
 
-
-/* .proy-img{
-	height: 30% !important;
-} */
-
+		/* Tamaño de imagenes en version desktop */
 .sec_img{
 	display: flex;
 	justify-content: center;
@@ -126,17 +132,42 @@ footer a{
 	margin-top: 5px;
 }
 
-/* .modal-sec_imgMK{
-	padding-left: 30%;
-	padding-right: 30%;
-} */
-
 #modalCD-img{
 	width: 50% !important;
 }
 #modalCA-img{
 	width: 55% !important;
 }
+		/* Tamaño de imagenes en version desktop */
+
+
+									/* Efectos */
+
+#name{
+	transition-duration: 4s;
+	transform: rotateY(360deg);
+}
+
+#basicInfo:target h3, #workExperience:target h2, 
+#education:target h2, #skills:target h2, #briefcase:target h2{
+	transition-duration: 3s;
+	transform: rotateX(360deg);
+}
+
+#footer-contact i:hover{
+	background-color: transparent;
+	transition-duration: 3s;
+	transform: rotateX(-180deg) rotateY(170deg);
+}
+
+
+#footer-contact:target i{
+	transition-duration: 4s;
+	transform: rotate(360deg);
+}
+
+				/* Fin de animacion */
+
 
 
 @media(max-width:1024px){
@@ -161,6 +192,5 @@ footer a{
 	}
 	#modalCA-img{
 		width: 70% !important;
-	}
-	
+	}	
 }
