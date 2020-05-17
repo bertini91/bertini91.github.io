@@ -143,9 +143,24 @@ footer a:hover{
 
 									/* Efectos */
 
-#name{
-	transition-duration: 4s;
-	transform: rotateY(360deg);
+/* #name{
+	transition-delay: 2s;
+	transition-duration: 6s !important;
+	transform: rotateY(360deg) !important;
+} */
+#name {
+	animation-duration: 3s;
+	animation-name: slidein;
+  }
+  
+@keyframes slidein {
+	from {
+	  transform: rotateY(360deg);
+	}
+	to{
+		transform: rotateY(360deg) !important;
+	}
+
 }
 
 #basicInfo:target h3, #workExperience:target h2, 
@@ -154,17 +169,17 @@ footer a:hover{
 	transform: rotateX(360deg);
 }
 
+#footer-contact:target i{
+	transition-duration: 4s;
+	transform: rotate(360deg);
+}
+
 #footer-contact i:hover{
 	background-color: transparent;
 	transition-duration: 3s;
 	transform: rotateX(-180deg) rotateY(170deg);
 }
 
-
-#footer-contact:target i{
-	transition-duration: 4s;
-	transform: rotate(360deg);
-}
 
 				/* Fin de animacion */
 
@@ -194,3 +209,10 @@ footer a:hover{
 		width: 70% !important;
 	}	
 }
+
+/* @keyframes loadName{
+	to{
+		transition-duration: 4s;
+		transform: rotateY(360deg);
+	}
+} */
