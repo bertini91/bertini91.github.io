@@ -7,7 +7,7 @@
 h3, #name{
     font-family: 'Righteous', cursive;
 }
-h2{
+h2, #nameContact{
     font-family: 'Bree Serif', serif;
 }
 h5, footer p{
@@ -35,10 +35,10 @@ a:hover{
 #name:hover{
 	background-color: transparent;
 }
-footer a{
+footer a, #openModalContact a{
 	color: white;
 }
-footer a:hover{
+footer a:hover, #openModalContact a{
 	background-color: transparent;
 }
 
@@ -110,6 +110,48 @@ footer a:hover{
 }
 .close:hover { background: #00d9ff; }
 
+.card-body{
+	text-align: center;
+}
+#titleContact{
+	margin: 10px 0 20px 0;
+}
+
+.form-group input{
+	width: 100%;
+	border: 2px solid #aaa;
+	border-radius: 4px;
+	outline: none;
+	padding: 8px;
+	box-sizing: border-box;
+	transition: 0.3s;
+}
+
+.inputWithIcon input {
+	padding-left: 40px;
+}
+
+.inputWithIcon {
+	position: relative;
+}
+
+.inputWithIcon i {
+	position: absolute;
+	left: 0;
+	top: 2px;
+	padding: 10px 9px;
+	color: #aaa;
+	transition: 3s;
+}
+
+.inputWithIcon.inputIconBg i {
+	background-color: #aaa;
+	color: #fff;
+	padding: 9px 4px;
+	border-radius: 4px 0 0 4px;
+}
+  
+
 		/* FIN VENTANA */
 
 		/* Tamaño de imagenes en version desktop */
@@ -143,7 +185,7 @@ footer a:hover{
 
 									/* Efectos */
 
-#name {
+#name, #openModalContact:target #titleContact {
 	animation-duration: 3s;
 	animation-name: slidein;
   }
@@ -164,12 +206,12 @@ footer a:hover{
 	transform: rotateX(360deg);
 }
 
-#footer-contact:target i{
+#footer-contact:target i, #openModalContact:target i, #openModalContact:target .inputWithIcon i{
 	transition-duration: 4s;
 	transform: rotate(360deg);
 }
 
-#footer-contact i:hover{
+#footer-contact i:hover, #openModalContact i:hover{
 	background-color: transparent;
 	transition-duration: 3s;
 	transform: rotateX(-180deg) rotateY(170deg);
@@ -203,4 +245,7 @@ footer a:hover{
 	#modalCA-img{
 		width: 70% !important;
 	}	
+	#titleContact{
+		margin-bottom: 10px;
+	}
 }
