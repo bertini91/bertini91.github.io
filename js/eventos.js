@@ -11,8 +11,10 @@ function revisar(input){
 function validarCorreo(inputCorreo){
     let expresion = /\w+@\w+\.[a-z]{2,}$/;
     if(revisar(inputCorreo)== true && expresion.test(inputCorreo.value)){
+        inputCorreo.className = "form-control is-valid";
         return true;
     }else{
+        inputCorreo.className = "form-control is-invalid";
         return false;
     }
 }
